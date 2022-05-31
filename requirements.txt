@@ -1,0 +1,9 @@
+gensim==3.8.1
+sklearn==0.0
+tensorboardX==2.0
+tqdm==4.41.0
+jsonlines==1.2.0
+lime==0.2.0.1
+transformers==4.9.2
+nltk==3.7
+spacy

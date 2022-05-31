@@ -1,0 +1,129 @@
+[
+{
+  "name": "restaurant",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./restaurant/train.txt",
+  "student-valid": "./restaurant/train.txt",
+  "student-test": "./restaurant/test.txt"
+},
+{
+  "name": "AB",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./AB/train.txt",
+  "student-valid": "./AB/train.txt",
+  "student-test": "./AB/test.txt"
+},
+{
+  "name": "AG",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./AG/train.txt",
+  "student-valid": "./AG/train.txt",
+  "student-test": "./AG/test.txt"
+},
+{
+  "name": "WA",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./WA/train.txt",
+  "student-valid": "./WA/train.txt",
+  "student-test": "./WA/test.txt"
+},
+{
+  "name": "DA",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./DA/train.txt",
+  "student-valid": "./DA/train.txt",
+  "student-test": "./DA/test.txt"
+},
+{
+  "name": "DS",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./DS/train.txt",
+  "student-valid": "./DS/train.txt",
+  "student-test": "./DS/test.txt"
+},
+{
+  "name": "AB_GR",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./AB/train.txt.explain_inj",
+  "student-valid": "./AB/train.txt.explain_inj",
+  "student-test": "./AB/test.txt"
+},
+{
+  "name": "AG_GR",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./AG/train.txt.explain_inj",
+  "student-valid": "./AG/train.txt.explain_inj",
+  "student-test": "./AG/test.txt"
+},
+{
+  "name": "WA_GR",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./WA/train.txt.explain_inj",
+  "student-valid": "./WA/train.txt.explain_inj",
+  "student-test": "./WA/test.txt"
+},
+{
+  "name": "DA_GR",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./DA/train.txt.explain_inj",
+  "student-valid": "./DA/train.txt.explain_inj",
+  "student-test": "./DA/test.txt"
+},
+{
+  "name": "DS_GR",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./DS/train.txt.explain_inj",
+  "student-valid": "./DS/train.txt.explain_inj",
+  "student-test": "./DS/test.txt"
+},
+{
+  "name": "AB_BS",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./AB/train.txt.explain_inj_bs",
+  "student-valid": "./AB/train.txt.explain_inj_bs",
+  "student-test": "./AB/test.txt"
+},
+{
+  "name": "AG_BS",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./AG/train.txt.explain_inj_bs",
+  "student-valid": "./AG/train.txt.explain_inj_bs",
+  "student-test": "./AG/test.txt"
+},
+{
+  "name": "WA_BS",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./WA/train.txt.explain_inj_bs",
+  "student-valid": "./WA/train.txt.explain_inj_bs",
+  "student-test": "./WA/test.txt"
+},
+{
+  "name": "DA_BS",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./DA/train.txt.explain_inj_bs",
+  "student-valid": "./DA/train.txt.explain_inj_bs",
+  "student-test": "./DA/test.txt"
+},
+{
+  "name": "DS_BS",
+  "task_type": "classification",
+  "vocab": ["0","1"],
+  "student-train": "./DS/train.txt.explain_inj_bs",
+  "student-valid": "./DS/train.txt.explain_inj_bs",
+  "student-test": "./DS/test.txt"
+}]

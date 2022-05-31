@@ -1,0 +1,365 @@
+[
+  {
+    "name": "Structured/Amazon-Google",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Amazon-Google/train.txt",
+    "validset": "data/er_magellan/Structured/Amazon-Google/valid.txt",
+    "testset": "data/er_magellan/Structured/Amazon-Google/test.txt"
+  },
+  {
+    "name": "Structured/Beer",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Beer/train.txt",
+    "validset": "data/er_magellan/Structured/Beer/valid.txt",
+    "testset": "data/er_magellan/Structured/Beer/test.txt"
+  },
+  {
+    "name": "Structured/DBLP-ACM",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/DBLP-ACM/train.txt",
+    "validset": "data/er_magellan/Structured/DBLP-ACM/valid.txt",
+    "testset": "data/er_magellan/Structured/DBLP-ACM/test.txt"
+  },
+  {
+    "name": "Structured/DBLP-GoogleScholar",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/DBLP-GoogleScholar/train.txt",
+    "validset": "data/er_magellan/Structured/DBLP-GoogleScholar/valid.txt",
+    "testset": "data/er_magellan/Structured/DBLP-GoogleScholar/test.txt"
+  },
+  {
+    "name": "Structured/Fodors-Zagats",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Fodors-Zagats/train.txt",
+    "validset": "data/er_magellan/Structured/Fodors-Zagats/valid.txt",
+    "testset": "data/er_magellan/Structured/Fodors-Zagats/test.txt"
+  },
+  {
+    "name": "Structured/iTunes-Amazon",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/iTunes-Amazon/train.txt",
+    "validset": "data/er_magellan/Structured/iTunes-Amazon/valid.txt",
+    "testset": "data/er_magellan/Structured/iTunes-Amazon/test.txt"
+  },
+  {
+    "name": "Structured/Walmart-Amazon",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Walmart-Amazon/train.txt",
+    "validset": "data/er_magellan/Structured/Walmart-Amazon/valid.txt",
+    "testset": "data/er_magellan/Structured/Walmart-Amazon/test.txt"
+  },
+  {
+    "name": "Textual/Abt-Buy-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Textual/Abt-Buy/train.txt.explain_inj",
+    "validset": "data/er_magellan/Textual/Abt-Buy/train.txt.explain",
+    "testset": "data/er_magellan/Textual/Abt-Buy/test.txt.explain"
+  },
+  {
+    "name": "Textual/Abt-Buy-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Textual/Abt-Buy/train.txt.explain",
+    "validset": "data/er_magellan/Textual/Abt-Buy/train.txt.explain",
+    "testset": "data/er_magellan/Textual/Abt-Buy/test.txt.explain"
+  },
+  {
+    "name": "Textual/Abt-Buy",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Textual/Abt-Buy/train.txt",
+    "validset": "data/er_magellan/Textual/Abt-Buy/valid.txt",
+    "testset": "data/er_magellan/Textual/Abt-Buy/test.txt"
+  },
+  {
+    "name": "Structured/Amazon-Google-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Amazon-Google/train.txt.explain_inj",
+    "validset": "data/er_magellan/Structured/Amazon-Google/train.txt.explain",
+    "testset": "data/er_magellan/Structured/Amazon-Google/test.txt.explain"
+  },
+  {
+    "name": "Structured/Amazon-Google-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Amazon-Google/train.txt.explain",
+    "validset": "data/er_magellan/Structured/Amazon-Google/train.txt.explain",
+    "testset": "data/er_magellan/Structured/Amazon-Google/test.txt.explain"
+  },
+  {
+    "name": "Structured/DBLP-ACM-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/DBLP-ACM/train.txt.explain_inj",
+    "validset": "data/er_magellan/Structured/DBLP-ACM/train.txt.explain",
+    "testset": "data/er_magellan/Structured/DBLP-ACM/test.txt.explain"
+  },
+  {
+    "name": "Structured/DBLP-ACM-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/DBLP-ACM/train.txt.explain",
+    "validset": "data/er_magellan/Structured/DBLP-ACM/train.txt.explain",
+    "testset": "data/er_magellan/Structured/DBLP-ACM/test.txt.explain"
+  },
+  {
+    "name": "Structured/DBLP-GoogleScholar-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/DBLP-GoogleScholar/train.txt.explain_inj",
+    "validset": "data/er_magellan/Structured/DBLP-GoogleScholar/train.txt.explain",
+    "testset": "data/er_magellan/Structured/DBLP-GoogleScholar/test.txt.explain"
+  },
+  {
+    "name": "Structured/DBLP-GoogleScholar-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/DBLP-GoogleScholar/train.txt.explain",
+    "validset": "data/er_magellan/Structured/DBLP-GoogleScholar/train.txt.explain",
+    "testset": "data/er_magellan/Structured/DBLP-GoogleScholar/test.txt.explain"
+  },
+  {
+    "name": "Structured/Walmart-Amazon-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Walmart-Amazon/train.txt.explain_inj",
+    "validset": "data/er_magellan/Structured/Walmart-Amazon/train.txt.explain",
+    "testset": "data/er_magellan/Structured/Walmart-Amazon/test.txt.explain"
+  },
+  {
+    "name": "Structured/Walmart-Amazon-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/er_magellan/Structured/Walmart-Amazon/train.txt.explain",
+    "validset": "data/er_magellan/Structured/Walmart-Amazon/train.txt.explain",
+    "testset": "data/er_magellan/Structured/Walmart-Amazon/test.txt.explain"
+  },
+  {
+    "name": "AG-minun-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/AG/train.txt.explain_inj",
+    "validset": "data/minun/AG/train.txt.explain",
+    "testset": "data/minun/AG/test.txt.explain"
+  },
+  {
+    "name": "AG-minun-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/AG/train.txt.explain",
+    "validset": "data/minun/AG/train.txt.explain",
+    "testset": "data/minun/AG/test.txt.explain"
+  },
+  {
+    "name": "DA-minun-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/DA/train.txt.explain_inj",
+    "validset": "data/minun/DA/train.txt.explain",
+    "testset": "data/minum/DA/test.txt.explain"
+  },
+  {
+    "name": "DA-minun-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/DA/train.txt.explain",
+    "validset": "data/minun/DA/train.txt.explain",
+    "testset": "data/minun/DA/test.txt.explain"
+  },
+  {
+    "name": "DS-minun-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/DS/train.txt.explain_inj",
+    "validset": "data/minun/DS/train.txt.explain",
+    "testset": "data/minun/DS/test.txt.explain"
+  },
+  {
+    "name": "DS-minun-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/DS/train.txt.explain",
+    "validset": "data/minun/DS/train.txt.explain",
+    "testset": "data/minun/DS/test.txt.explain"
+  },
+  {
+    "name": "WA-minun-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/WA/train.txt.explain_inj",
+    "validset": "data/minun/WA/train.txt.explain",
+    "testset": "data/minun/WA/test.txt.explain"
+  },
+  {
+    "name": "WA-minun-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/WA/train.txt.explain",
+    "validset": "data/minun/WA/train.txt.explain",
+    "testset": "data/minun/WA/test.txt.explain"
+  },
+  {
+    "name": "AB-minun-explain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/AB/train.txt.explain_inj",
+    "validset": "data/minun/AB/train.txt.explain",
+    "testset": "data/minun/AB/test.txt.explain"
+  },
+  {
+    "name": "AB-minun-noexplain",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/AB/train.txt.explain",
+    "validset": "data/minun/AB/train.txt.explain",
+    "testset": "data/minun/AB/test.txt.explain"
+  },
+  {
+    "name": "AG-minun-explain_bs",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/AG/train.txt.explain_inj_bs",
+    "validset": "data/minun/AG/train.txt.explain",
+    "testset": "data/minun/AG/test.txt.explain"
+  },
+  {
+    "name": "DA-minun-explain_bs",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/DA/train.txt.explain_inj_bs",
+    "validset": "data/minun/DA/train.txt.explain",
+    "testset": "data/minun/DA/test.txt.explain"
+  },
+  {
+    "name": "DS-minun-explain_bs",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/DS/train.txt.explain_inj_bs",
+    "validset": "data/minun/DS/train.txt.explain",
+    "testset": "data/minun/DS/test.txt.explain"
+  },
+  {
+    "name": "WA-minun-explain_bs",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/WA/train.txt.explain_inj_bs",
+    "validset": "data/minun/WA/train.txt.explain",
+    "testset": "data/minun/WA/test.txt.explain"
+  },
+  {
+    "name": "AB-minun-explain_bs",
+    "task_type": "classification",
+    "vocab": [
+      "0",
+      "1"
+    ],
+    "trainset": "data/minun/AB/train.txt.explain_inj_bs",
+    "validset": "data/minun/AB/train.txt.explain",
+    "testset": "data/minun/AB/test.txt.explain"
+  }
+]
