@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import jsonlines
 
 
 datasets = ['AG',
@@ -33,7 +34,7 @@ def update_configs():
 
 
 def add_labels(gpu_id):
-    import jsonlines
+    """Verify and re-label the train/valid/test sets for explanations."""
     model_paths = ['Structured/Amazon-Google',
                    'Structured/DBLP-ACM',
                    'Structured/DBLP-GoogleScholar',
@@ -51,7 +52,7 @@ def add_labels(gpu_id):
                    --task %s \
                    --input_path %s \
                    --output_path %s \
-                   --lm distilbert \
+                   --lm roberta \
                    --max_len 256 \
                    --use_gpu \
                    --fp16 \
@@ -63,36 +64,28 @@ def add_labels(gpu_id):
 
                 for rid, row in enumerate(reader):
                     left, right, label = row['left'], row['right'], row['match']
-                    if rid % 2 == 0:
-                        prev_label = label
-                        skip = False
-                    else:
-                        skip = 'explain_inj' in suffix and label == prev_label
+                    fout.write('%s\t%s\t%d\n' % (left, right, label))
 
-                    # if not skip:
-                    if True:
-                        fout.write('%s\t%s\t%d\n' % (left, right, label))
                 fout.close()
 
 gpu_id = 1
 update_configs()
 add_labels(gpu_id)
-# exit(0)
 
 if __name__ == '__main__':
     for dataset in datasets:
         # train model w/o explanation
-        # os.system("""CUDA_VISIBLE_DEVICES=%d python train_ditto.py \
-        #           --task %s \
-        #           --logdir checkpoints_minun_new \
-        #           --batch_size 64 \
-        #           --max_len 256 \
-        #           --lr 3e-5 \
-        #           --n_epochs 40 \
-        #           --lm distilbert \
-        #           --fp16""" % (gpu_id, dataset + '-minun-noexplain'))
+        os.system("""CUDA_VISIBLE_DEVICES=%d python train_ditto.py \
+                  --task %s \
+                  --logdir checkpoints_minun_new \
+                  --batch_size 64 \
+                  --max_len 256 \
+                  --lr 3e-5 \
+                  --n_epochs 40 \
+                  --lm distilbert \
+                  --fp16""" % (gpu_id, dataset + '-minun-noexplain'))
 
-        # # train model w explanation
+        # train model w explanation
         os.system("""CUDA_VISIBLE_DEVICES=%d python train_ditto.py \
                   --task %s \
                   --logdir checkpoints_minun_new \
@@ -104,12 +97,12 @@ if __name__ == '__main__':
                   --fp16""" % (gpu_id, dataset + '-minun-explain'))
 
         # train model w explanation
-        # os.system("""CUDA_VISIBLE_DEVICES=%d python train_ditto.py \
-        #           --task %s \
-        #           --logdir checkpoints_minun_new \
-        #           --batch_size 64 \
-        #           --max_len 256 \
-        #           --lr 3e-5 \
-        #           --n_epochs 40 \
-        #           --lm distilbert \
-        #           --fp16""" % (gpu_id, dataset + '-minun-explain_bs'))
+        os.system("""CUDA_VISIBLE_DEVICES=%d python train_ditto.py \
+                  --task %s \
+                  --logdir checkpoints_minun_new \
+                  --batch_size 64 \
+                  --max_len 256 \
+                  --lr 3e-5 \
+                  --n_epochs 40 \
+                  --lm distilbert \
+                  --fp16""" % (gpu_id, dataset + '-minun-explain_bs'))

@@ -8,12 +8,18 @@ from transformers import AutoTokenizer
 lm_mp = {'roberta': 'roberta-base',
          'distilbert': 'distilbert-base-uncased'}
 
-def get_tokenizer(lm):
-    if lm in lm_mp:
-        return AutoTokenizer.from_pretrained(lm_mp[lm])
-    else:
-        return AutoTokenizer.from_pretrained(lm)
+tokenizer_cache = {}
 
+def get_tokenizer(lm):
+    """Load a tokenizer by name.
+    """
+    if lm not in tokenizer_cache:
+        if lm in lm_mp:
+            tokenizer_cache[lm] = AutoTokenizer.from_pretrained(lm_mp[lm])
+        else:
+            tokenizer_cache[lm] = AutoTokenizer.from_pretrained(lm)
+
+    return tokenizer_cache[lm]
 
 class PretrainDataset(data.Dataset):
     """EM dataset"""
